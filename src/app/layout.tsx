@@ -27,7 +27,7 @@ const ptSerif = PT_Serif({
 
 export const metadata: Metadata = {
   title: customMetadata.title || aboutMe.name,
-  description: customMetadata.description || aboutMe.description,
+  description: "Hello!I'm a medical doctor with technical background in software development and artificial intelligence.",
   icons: {
     icon: "https://jobclerkmedia.blob.core.windows.net/main/ain.ico",
   },
