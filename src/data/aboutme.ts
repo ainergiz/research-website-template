@@ -1,10 +1,14 @@
 export interface AboutMe {
   name: string;
   title: string;
-  institution: string;
+  institution1: string;
+  institutionUrl1: string;
+  institution2?: string;
+  institutionUrl2?: string;
   description: string;
   email: string;
   imageUrl?: string;
+  imageDescription?: string;
   blogUrl?: string;
   cvUrl?: string;
   googleScholarUrl?: string;
@@ -13,27 +17,28 @@ export interface AboutMe {
   linkedinUsername?: string;
   funDescription?: string; // Gets placed in the left sidebar
   secretDescription?: string; // Gets placed in the bottom
-  altName?: string;
   institutionUrl?: string;
 }
 
 export const aboutMe: AboutMe = {
-  name: "Jane R. Smith",
-  title: "Ph.D. Candidate",
-  institution: "Stanford University",
+  name: "Ali Ihsan Nergiz",
+  title: "Medical Doctor, Developer",
+  institution1: "Uterio",
+  institutionUrl1: "https://www.uterio.com",
+  institution2: "Job Clerk",
+  institutionUrl2: "https://www.jobclerk.com",
   // Note that links work in the description
   description:
-    "I'm a final-year <a href='https://www.stanford.edu'>PhD candidate</a> working at the intersection of causal inference and machine learning. My research focuses on developing robust, interpretable systems that can reason about cause and effect in complex environments.",
-  email: "______@stanford.edu",
+    "I'm a medical doctor with technical background in software development and artificial intelligence. I'm currently building <a href='https://www.uterio.com'>Uterio</a>, medical education platform to advance women's health education, and <a href='https://www.jobclerk.com'>Job Clerk</a>, better way of searching NHS jobs for healthcare professionals. <br> <br> I was a writer (some examples <a href='https://bianet.org/yazar/ali-ihsan-nergiz-6828'>bianet</a>), political activist, and professional e-sports player in different times of my life. Apart from working on startups I'm building, right now I'm focuing on understanding diffusions models and their applications in radiology. <br> <br> You can always reach out to me at <a href='mailto:aihsannergiz@gmail.com'>aihsannergiz@gmail.com</a>. to talk about new projects and collaborations.  ",
+  email: "aihsannergiz@gmail.com",
   imageUrl:
-    "https://images.unsplash.com/photo-1581481615985-ba4775734a9b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  googleScholarUrl: "https://scholar.google.com/citations?user=bWtMl_MAAAAJ",
-  githubUsername: "janesmith",
-  linkedinUsername: "janesmith",
-  twitterUsername: "janesmith",
-  blogUrl: "https://",
-  cvUrl: "https://",
-  institutionUrl: "https://www.stanford.edu",
-  // altName: "",
+    "/portrait.jpg",
+  imageDescription: "London, Bankside, 2024",
+  googleScholarUrl: "https://scholar.google.com/citations?user=baHmrQ8AAAAJ&hl",
+  githubUsername: "nergizihsan",
+  linkedinUsername: "ali-ihsan-nergiz",
+  twitterUsername: "aihsannergiz",
+  // blogUrl: "https://",
+  // cvUrl: "https://",
   // secretDescription: "I like dogs.",
 };
