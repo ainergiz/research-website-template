@@ -10,21 +10,24 @@ export interface Experience {
 
 export const experienceData: Experience[] = [
   {
-    date: "Summer 2023",
-    title: "Research Intern",
-    company: "DeepMind",
+    date: "2023-Present",
+    title: "Locum Resident Doctor",
+    company: "Barts Health NHS Trust",
     description:
-      "Developed novel algorithms for causal structure learning in reinforcement learning settings",
-    advisor: "Peter Wang",
-    companyUrl: "https://deepmind.com",
+      "I continue to work as a ad-hoc locum doctor in different departments of Royal London Hospital to keep up my medical skills.",
   },
   {
-    date: "Summer 2022",
-    title: "Research Intern",
-    company: "Google Research",
+    date: "2022-2023",
+    title: "Junior Clinical Fellow in Gynaecological Oncology",
+    company: "Barts Health NHS Trust",
     description:
-      "Worked on improving robustness of large language models to distribution shifts",
-    manager: "Elise Brown",
-    companyUrl: "https://google.com",
+      "I worked as a junior clinical fellow within the amazing gynaecological oncology department of Royal London Hospital.",
+  },
+  {
+    date: "2021-2022",
+    title: "Trust Grade Senior House Officer",
+    company: "University Hospitals of Leicester NHS Trust",
+    description:
+      "This was my first ever job as a medical doctor. I mainly worked in gastroenterology and infectious diseases wards.",
   },
 ];

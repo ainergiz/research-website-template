@@ -29,7 +29,7 @@ export const aboutMe: AboutMe = {
   institutionUrl2: "https://www.jobclerk.com",
   // Note that links work in the description
   description:
-    "I'm a medical doctor with technical background in software development and artificial intelligence. I'm currently building <a href='https://www.uterio.com'>Uterio</a>, medical education platform to advance women's health education, and <a href='https://www.jobclerk.com'>Job Clerk</a>, better way of searching NHS jobs for healthcare professionals. <br> <br> I was a writer (some examples <a href='https://bianet.org/yazar/ali-ihsan-nergiz-6828'>bianet</a>), political activist, and professional e-sports player in different times of my life. Apart from working on startups I'm building, right now I'm focuing on understanding diffusions models and their applications in radiology. <br> <br> You can always reach out to me at <a href='mailto:aihsannergiz@gmail.com'>aihsannergiz@gmail.com</a>. to talk about new projects and collaborations.  ",
+    "I'm a medical doctor with technical background in software development and artificial intelligence. I'm currently building <a href='https://www.uterio.com'>Uterio</a>, medical education platform to advance women's health education, and <a href='https://www.jobclerk.com'>Job Clerk</a>, better way of searching NHS jobs for healthcare professionals. <br> <br> I was a writer (some examples <a href='https://bianet.org/yazar/ali-ihsan-nergiz-6828'>bianet</a>), political activist, and professional e-sports player in different times of my life. Apart from working on startups I'm building, I'm also focusing on understanding diffusions models and their applications in radiology. <br> <br> You can always reach out to me at <a href='mailto:aihsannergiz@gmail.com'>aihsannergiz@gmail.com</a> to talk about new projects and collaborations.  ",
   email: "aihsannergiz@gmail.com",
   imageUrl:
     "/portrait.jpg",
@@ -40,5 +40,5 @@ export const aboutMe: AboutMe = {
   twitterUsername: "aihsannergiz",
   // blogUrl: "https://",
   // cvUrl: "https://",
-  // secretDescription: "I like dogs.",
+  secretDescription: "Fun fact: I have read Robert Jordan's The Wheel of Time series (14 books, over 10000 pages) 4 times.",
 };

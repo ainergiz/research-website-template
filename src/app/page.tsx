@@ -69,7 +69,7 @@ export default function Home() {
                 case Section.Publication:
                   return (
                     publicationData.length > 0 && (
-                      <ToggleableSection key={sectionName} title="Publications">
+                      <ToggleableSection key={sectionName} title="Selected Publications">
                         {publicationData.map((publication, index) => (
                           <div key={index}>
                             <PublicationEntry publication={publication} />
@@ -81,7 +81,7 @@ export default function Home() {
                 case Section.Experience:
                   return (
                     experienceData.length > 0 && (
-                      <ToggleableSection key={sectionName} title="Experience">
+                      <ToggleableSection key={sectionName} title="Medical Employment">
                         {experienceData.map((experience, index) => (
                           <ExperienceEntry
                             key={index}
