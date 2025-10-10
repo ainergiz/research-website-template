@@ -1,33 +1,63 @@
+export interface ExperienceBullet {
+  label?: string;
+  text: string;
+}
+
 export interface Experience {
   date: string;
   title: string;
   company: string;
-  description?: string;
-  advisor?: string;
-  manager?: string;
   companyUrl?: string;
+  location?: string;
+  bullets: ExperienceBullet[];
 }
 
 export const experienceData: Experience[] = [
   {
-    date: "2023-Present",
-    title: "Locum Resident Doctor",
-    company: "Barts Health NHS Trust",
-    description:
-      "I continue to work as a ad-hoc locum doctor in different departments of Royal London Hospital to keep up my medical skills.",
+    date: "March 2025 – Present",
+    title: "Full Stack Software Engineer",
+    company: "GenomeKey",
+    companyUrl: "https://genomekey.com",
+    location: "London, United Kingdom",
+    bullets: [
+      {
+        text: "I build end-to-end internal tools for scientists and collaborate with ML engineers.",
+      },
+      {
+        label: "Tech stack",
+        text: "React, Django, Dagster, RabbitMQ, PostgreSQL, GCP",
+      },
+    ],
   },
   {
-    date: "2022-2023",
-    title: "Junior Clinical Fellow in Gynaecological Oncology",
-    company: "Barts Health NHS Trust",
-    description:
-      "I worked as a junior clinical fellow within the amazing gynaecological oncology department of Royal London Hospital.",
+    date: "November 2023 – Present",
+    title: "Founder and Software Engineer",
+    company: "Job Clerk",
+    companyUrl: "https://jobclerk.com",
+    location: "London, United Kingdom",
+    bullets: [
+      {
+        text: "I built an AI-powered job application website with a chrome extension to automate workflows.",
+      },
+      {
+        label: "Tech stack",
+        text: "React, Next.js, Azure Functions, Redis, MongoDB",
+      },
+    ],
   },
   {
-    date: "2021-2022",
-    title: "Trust Grade Senior House Officer",
-    company: "University Hospitals of Leicester NHS Trust",
-    description:
-      "This was my first ever job as a medical doctor. I mainly worked in gastroenterology and infectious diseases wards.",
+    date: "November 2021 – November 2023",
+    title: "Resident Medical Doctor",
+    company: "National Health Service (NHS)",
+    companyUrl: "https://www.nhs.uk",
+    location: "United Kingdom",
+    bullets: [
+      {
+        text: "I worked at medical and surgical specialities at some of the most prestigious research hospitals.",
+      },
+      {
+        text: "Performed under immense pressure in collaboration with multidisciplinary teams, serving patients.",
+      },
+    ],
   },
 ];

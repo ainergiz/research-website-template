@@ -87,6 +87,20 @@ export function ProfileSection({ aboutMe }: ProfileSectionProps) {
             <Mail size={14} />
             {aboutMe.email}
           </a>
+          {aboutMe.githubUsername && (
+            <>
+              <br />
+              <a
+                href={`https://github.com/${aboutMe.githubUsername}`}
+                className="inline-flex items-center gap-2 text-sm text-zinc-600 hover:text-zinc-900 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Github size={14} />
+                github.com/{aboutMe.githubUsername}
+              </a>
+            </>
+          )}
           {aboutMe.googleScholarUrl && (
             <>
               <br />
@@ -111,20 +125,6 @@ export function ProfileSection({ aboutMe }: ProfileSectionProps) {
                 rel="noopener noreferrer"
               >
                 <Twitter size={14} />@{aboutMe.twitterUsername}
-              </a>
-            </>
-          )}
-          {aboutMe.githubUsername && (
-            <>
-              <br />
-              <a
-                href={`https://github.com/${aboutMe.githubUsername}`}
-                className="inline-flex items-center gap-2 text-sm text-zinc-600 hover:text-zinc-900 transition-colors"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Github size={14} />
-                github.com/{aboutMe.githubUsername}
               </a>
             </>
           )}

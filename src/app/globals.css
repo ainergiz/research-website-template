@@ -25,3 +25,17 @@ body {
 .sans {
   font-family: var(--font-geist-sans), system-ui, sans-serif;
 }
+
+@layer components {
+  .about-prose {
+    @apply space-y-4 font-serif text-sm leading-relaxed text-zinc-700;
+  }
+
+  .about-prose a {
+    @apply underline text-zinc-900 transition-colors duration-300 hover:text-zinc-600;
+  }
+
+  .about-prose p {
+    @apply text-inherit;
+  }
+}
